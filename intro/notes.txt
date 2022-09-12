@@ -1,0 +1,36 @@
+
+# environment setup
+
+conda create -n ml-zoomcamp python=3.9
+
+# actrive environment
+conda activate ml-zoomcamp
+
+
+# install libraries
+conda install numpy pandas scikit-learn seaborn jupyter
+
+# count unique values in a column
+df.team.value_counts()
+df['team'].value_counts()
+
+
+############# Find and Count Unique Values in a Column ##################
+The following code shows how to find and count the occurrence of unique values in a single column of the DataFrame:
+
+df.team.value_counts()
+
+A    3
+B    2
+C    1
+Name: team, dtype: int64
+
+
+############# determine the number of rows of data frame ##########################
+
+
+
+rows_count = len(df.index)
+rows_count = len(df.axes[0])
+rows_count = df.shape[0]
+rows_count = df.count()[0]
